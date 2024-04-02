@@ -1,0 +1,590 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* SEÇÃO HEADER */
+
+header {
+  background: #fff;
+}
+
+nav {
+  padding-right: 150px;
+}
+
+nav button i {
+  font-size: 30px;
+}
+a.nav-link {
+  color: #575756;
+  font-size: 16px;
+}
+
+nav button {
+  color: #000;
+}
+
+.navbar-nav .nav-link.active {
+  color: #000; /* Cor do texto */
+}
+/* Estilo para link quando hover */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #000; /* Cor do texto ao passar o mouse */
+}
+
+a.nav-link:hover {
+  color: #000;
+  font-size: 16px;
+}
+/* BANNER PRINCIPAL*/
+.bg1 {
+  background-image: url("images/bg1.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.bg1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg2 {
+  background-image: url("images/bg2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.bg2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.conteudo-banner {
+  text-align: center;
+  max-width: 850px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.cta-banner i {
+  font-size: 60px;
+  cursor: pointer;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  width: 25px;
+  height: 25px;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: #dbdbdb;
+  width: 25px;
+  height: 25px;
+}
+.banner-principal {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+}
+
+.banner-principal-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*SEÇÃO QUEM SOMOS*/
+
+.secao-quem-somos {
+  margin-top: 80px;
+  z-index: -1;
+}
+
+.imagem-quem-somos img {
+  max-width: 90%;
+}
+
+.titulo-quem-somos h2 {
+  position: relative;
+  display: inline-block;
+  color: #575756;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 8px;
+  margin-left: 50px;
+}
+
+.titulo-quem-somos > h2::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 1.5em;
+  height: 0.08em;
+  background-color: #575756;
+  margin-left: 0.5em;
+}
+
+.titulo2-quem-somos h2 {
+  color: #575756;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 8px;
+  margin-left: 50px;
+}
+
+.conteudo-quem-somos p {
+  color: #575756;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px;
+  margin-left: 50px;
+}
+
+.button-quem-somos button {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px;
+  margin-left: 50px;
+  background-color: #e42313; /* Green */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.imagem-equipe img {
+  max-width: 90%;
+}
+
+.titulo-equipe h2 {
+  position: relative;
+  display: inline-block;
+  color: #575756;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 8px;
+}
+
+.titulo-equipe > h2::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 1.5em;
+  height: 0.08em;
+  background-color: #575756;
+  margin-left: 0.5em;
+}
+
+.titulo2-equipe h2 {
+  color: #575756;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 8px;
+  margin-right: 50px;
+}
+
+.conteudo-equipe p {
+  color: #575756;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px;
+  margin-right: 50px;
+}
+
+/*ESTILO SEÇÃO ESPAÇO*/
+
+.secao-espaco {
+  background-color: #fbfbfb;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  padding: 30px;
+}
+
+.background-caminho {
+  position: absolute;
+  left: 0;
+  width: 35%;
+  height: 85%;
+  background-image: url("images/caminho.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.imagem-espaco {
+  margin-bottom: -80px;
+}
+
+.imagem-espaco img {
+  max-width: 100%;
+}
+
+.titulo-espaco h2 {
+  position: relative;
+  display: inline-block;
+  color: #575756;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 8px;
+}
+
+.titulo-espaco > h2::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 1.5em;
+  height: 0.08em;
+  background-color: #575756;
+  margin-left: 0.5em;
+}
+
+.titulo2-espaco h2 {
+  color: #575756;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 8px;
+  margin-right: 50px;
+}
+
+.conteudo-espaco p {
+  color: #575756;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px;
+  margin-right: 50px;
+}
+
+.slider-espaco {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* Estilos para os slides do Swiper */
+.slider-espaco .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.contain-buttons-slide {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-espaco-prev,
+.slide-espaco-next {
+  width: 35px;
+  color: #575756;
+  cursor: pointer;
+  margin-right: 40px;
+  border: 1px solid #57575677;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 3px;
+}
+
+/*ESTILO SEÇÃO CONTATO*/
+
+.secao-contato {
+  margin-top: 80px;
+}
+.texto-contato {
+  text-align: center;
+}
+
+.texto-contato h2 {
+  color: #575756;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 8px;
+  margin-right: 50px;
+}
+
+.texto-contato p {
+  color: #575756;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+div.secao-icons-contato {
+  margin-top: 30px;
+  width: 700px;
+}
+
+.icon-contato {
+  background: #fbfbfb;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.wechat {
+  cursor: pointer;
+}
+
+.whatsapp {
+  cursor: pointer;
+}
+
+.telefone {
+  cursor: pointer;
+}
+
+div.icon-contato p {
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #e42313;
+}
+
+/**SEÇÃO FORMULÁRIO**/
+
+.secao-formulario {
+  margin-top: 40px;
+  background: #fbfbfb;
+  box-shadow: 7px 7px 15px #9c9c9c29;
+  border-radius: 10px;
+  padding: 70px;
+}
+
+input[type="text"],
+input[type="email"] {
+  background: #f1f1f1bd;
+  border-radius: 20px;
+  height: 50px;
+  width: 516px;
+  padding-left: 10px;
+  color: #575756;
+  border: none;
+  padding-right: 25px;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f1f1f1bd;
+  border-radius: 20px;
+  padding: 0 40px 0 10px;
+  border: none;
+  height: 50px;
+  width: 516px;
+  color: #575756;
+  position: relative;
+  background-image: url("images/seta-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  outline: none;
+}
+
+textarea {
+  width: 475px;
+  height: 156px;
+  background-color: #f1f1f1bd;
+  border-radius: 20px;
+  color: #575756;
+  border: none;
+  padding: 15px;
+  resize: none;
+  outline: none;
+  margin-left: 40px;
+}
+
+.button-submit-form {
+  text-align: right;
+}
+
+button.btn {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px;
+  margin-right: 45px;
+  background-color: #e42313; /* Green */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 35px;
+  background-color: #575756;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+.menu-info {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 45px;
+}
+.menu-footer a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.social-media {
+  position: absolute;
+  right: 90px;
+}
+
+.social-media i {
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+.social-media a {
+  text-decoration: none;
+}
+
+.footer-copyright {
+  padding-top: 45px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .bg1 {
+    background-position: center center;
+  }
+  .bg2 {
+    background-position: center center;
+  }
+
+  .conteudo-banner {
+    text-align: center;
+    max-width: 80%;
+    color: #ffffff;
+    z-index: 1;
+  }
+  nav {
+    padding-right: 0;
+  }
+  .secao-formulario {
+    margin-top: 40px;
+    background: #fbfbfb;
+    box-shadow: 7px 7px 15px #9c9c9c29;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .imagem-quem-somos img {
+    max-width: 100%;
+  }
+  .titulo-quem-somos h2 {
+    margin-left: 0;
+  }
+
+  .titulo2-quem-somos h2 {
+    margin-left: 0;
+  }
+
+  .conteudo-quem-somos p {
+    margin-left: 0;
+  }
+
+  .imagem-equipe img {
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  textarea {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .menu-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .social-media a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-footer a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
