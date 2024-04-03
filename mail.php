@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
-            $mail->Host = 'mail.gianfrancopedrol.com.br';
+            $mail->Host = 'mail.smtp.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'dev@gianfrancopedrol.com.br';
-            $mail->Password = 'pedrol@1914';
+            $mail->Username = 'dev@teste.com';
+            $mail->Password = 'de@122';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
